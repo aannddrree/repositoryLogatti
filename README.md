@@ -1,4 +1,4 @@
 # repositoryLogatti
 
-#ProjExemploBanco
-Para este item deve ser criado um Schema no MySQL chamado: bdagenda2
+# ProjExemploBanco: 
+* Para este item deve ser criado um Schema no MySQL chamado: bdagenda2
