@@ -11,6 +11,7 @@
 <body>
 
 	<% 
+String codigo = request.getParameter("codigo");	
 String nome = request.getParameter("nome");
 String telefone = request.getParameter("telefone");
 
@@ -19,9 +20,13 @@ Cadastro cadastro = new Cadastro();
 cadastro.setNome(nome);
 cadastro.setTelefone(telefone);
 
-if (new CadastroDB().inserir(cadastro)){
-	response.sendRedirect("consultar.jsp");
+if (!(codigo.isEmpty() || codigo.equals(null))){
+	cadastro.setCodigo(Integer.parseInt(codigo));
+	new CadastroDB().alterar(cadastro);
+}else{
+	new CadastroDB().inserir(cadastro);
 }
+response.sendRedirect("consultar.jsp");
 %>
 </body>
 </html>

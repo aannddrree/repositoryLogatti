@@ -42,6 +42,30 @@ public class CadastroDB {
 		}
 		return false;
 	}
+	
+	public boolean alterar(Cadastro cadastro) throws SQLException {
+
+		try {
+
+			PreparedStatement stmt = this.connection
+					.prepareStatement("UPDATE AGENDA SET nome = ?, telefone = ? WHERE codigo = ?");
+
+			stmt.setString(1, cadastro.getNome());
+			stmt.setString(2, cadastro.getTelefone());
+            stmt.setInt(3, cadastro.getCodigo());
+            
+			stmt.execute();
+			return true;
+
+		} catch (SQLException e) {
+			System.err.println(e.toString());
+		} finally {
+
+			connection.close();
+
+		}
+		return false;
+	}
 
 	public List<Cadastro> getAll() {
 
@@ -57,5 +81,27 @@ public class CadastroDB {
 			e.printStackTrace();
 		}
 		return lstCadastro;
+	}
+	
+	public boolean excluir(int codigo) throws SQLException {
+
+		try {
+
+			PreparedStatement stmt = this.connection
+					.prepareStatement("DELETE FROM AGENDA WHERE CODIGO =?");
+
+			stmt.setInt(1, codigo);
+
+			stmt.execute();
+			return true;
+
+		} catch (SQLException e) {
+			System.err.println(e.toString());
+		} finally {
+
+			connection.close();
+
+		}
+		return false;
 	}
 }

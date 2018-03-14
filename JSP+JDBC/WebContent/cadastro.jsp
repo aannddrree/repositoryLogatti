@@ -14,13 +14,15 @@
 	<div align="center">
 		<h1>Agenda</h1>
 		<form action="cadastrar.jsp" method="post">
-
+           
+            <input type="hidden" class="form-control" id="codigo" name="codigo" value="${param.codigo}">
+			
 			<div class="col-sm-6">
 
 				<div class="form-group">
 					<div class="row">
 						<label for="nome">Nome</label> <input type="text"
-							class="form-control" id="nome" name="nome">
+							class="form-control" id="nome" name="nome" value="${param.nome}">
 
 					</div>
 
@@ -28,7 +30,7 @@
 				<div class="form-group">
 					<div class="row">
 						<label for="nome">Telefone</label> <input type="text"
-							class="form-control" id="telefone" name="telefone">
+							class="form-control" id="telefone" name="telefone" value="${param.telefone}">
 					</div>
 				</div>
 
