@@ -1,5 +1,5 @@
-<%@page import="br.com.projaulabanco.dados.CadastroDB"%>
-<%@page import="br.com.projaulabanco.entidade.Cadastro"%>
+<%@page import="br.com.proj.entidade.Peca"%>
+<%@page import="br.com.proj.dados.PecaDB"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -22,25 +22,36 @@
 
 <div style="padding-top: 3%"></div>
 
-<input type="hidden" class="form-control" id="codigo" name="codigo">
+<input type="hidden" class="form-control" id="id" name="id">
 <table class="table table-hover table-dark">
   <thead>
     <tr>
       <th scope="col">#</th>
       <th scope="col">Nome</th>
-      <th scope="col">Telefone</th>
+      <th scope="col">Peso</th>
+      <th scope="col">Tipo</th>
+      <th scope="col">Data Cadastro</th>
+      <th scope="col">Valor</th>
       <th scope="col">Opções</th>
     </tr>
   </thead>
   <tbody>
-    <%for (Cadastro cadastro : new CadastroDB().getAll()){%>
+    <%for (Peca peca : new PecaDB().getAll()){%>
     <tr>
-      <th scope="row"><%=cadastro.getCodigo() %></th>
-      <td><%=cadastro.getNome() %></td>
-      <td><%=cadastro.getTelefone() %></td>
+      <th scope="row"><%=peca.getId() %></th>
+      <td><%=peca.getNome() %></td>
+      <td><%=peca.getPeso() %></td>
+      <td><%=peca.getTipo() %></td>
+      <td><%=peca.getDataCadastro() %></td>
+      <td><%=peca.getValor() %></td>
       <td>  
-      <button class="btn btn-warning" onclick="alterar(<%=cadastro.getCodigo() %>, '<%=cadastro.getNome() %>', '<%=cadastro.getTelefone() %>')">Alterar</button>
-      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confexcluir" onclick="salvaCodigo(<%=cadastro.getCodigo() %>)">Excluir</button>
+      <button class="btn btn-warning" onclick="alterar(<%=peca.getId() %>, 
+      '<%=peca.getNome() %>', <%=peca.getPeso() %>, 
+      '<%=peca.getTipo() %>', '<%=peca.getDataCadastro() %>', 
+      <%=peca.getValor() %>)">Alterar</button>
+      <button type="button" class="btn btn-danger" 
+      data-toggle="modal" data-target="#confexcluir" 
+      onclick="salvaCodigo(<%=peca.getId() %>)">Excluir</button>
       </td>
     </tr>
     <%}%>
@@ -72,18 +83,18 @@
 </body>
 
 <script>
-function alterar(codigo, nome, telefone) {
-   location.href="cadastro.jsp?codigo="+codigo+"&nome="+nome+"&telefone="+telefone;	
+function alterar(codigo, nome, peso, tipo, dataCadastro, valor) {
+   location.href="cadastro.jsp?codigo="+codigo+"&nome="+nome+"&peso="+peso+"&tipo="+tipo+"&dataCadastro="+dataCadastro+"&valor="+valor;	
 }
 
 function salvaCodigo(codigo) {
-	var id = document.getElementById("codigo");
+	var id = document.getElementById("id");
 	id.value = codigo;
 }
 
 function excluir() {
-	var codigo = document.getElementById("codigo").value; 
-	location.href="excluir.jsp?codigo="+codigo;	
+	var codigo = document.getElementById("id").value; 
+	location.href="excluir.jsp?id="+codigo;	
 }
 </script>
 

@@ -9,7 +9,7 @@ public class Conexao {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = null;
-			con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/bdagenda", "root", "1234");
+			con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/bdagenda", "root", "logatti");
 			return con;
 
 		} catch (SQLException e) {
