@@ -71,7 +71,7 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(107, 114);
+            this.btnSalvar.Location = new System.Drawing.Point(128, 113);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 5;
@@ -82,16 +82,16 @@
             // dgTipo
             // 
             this.dgTipo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgTipo.Location = new System.Drawing.Point(23, 163);
+            this.dgTipo.Location = new System.Drawing.Point(23, 157);
             this.dgTipo.Name = "dgTipo";
-            this.dgTipo.Size = new System.Drawing.Size(331, 150);
+            this.dgTipo.Size = new System.Drawing.Size(381, 150);
             this.dgTipo.TabIndex = 6;
             // 
             // FrmTipo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(369, 325);
+            this.ClientSize = new System.Drawing.Size(416, 319);
             this.Controls.Add(this.dgTipo);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.lblsdfs);

@@ -33,7 +33,15 @@ namespace Controle2
 
         public List<Tipo> ListarTipo()
         {
-            using (db = new DB())
+            using (db = new DB()) //Instancia a classe DB
+                                  //Delimitando o inicio e o fim
+                                  //Inicio -> Construtor da Classe
+                                  //Abre a conexão com 
+                                  //a base de dados
+                                  //Fim -> Chama o método Dispose() -
+                                  //da Interface IDisposable
+                                  //Fecha a conexão com o 
+                                  //banco de dados.
             {
                 var sql = "SELECT id, descricao FROM TB_TIPO";
                 var retorno = db.ExecutaComandoRetorno(sql);
@@ -41,7 +49,8 @@ namespace Controle2
             }
         }
 
-        private List<Tipo> TransformaSQLReaderEmList(SqlDataReader retorno)
+        private List<Tipo> TransformaSQLReaderEmList
+            (SqlDataReader retorno)
         {
             var listTipo = new List<Tipo>();
 

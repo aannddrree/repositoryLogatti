@@ -42,7 +42,8 @@ namespace Controle
             cmd.ExecuteNonQuery();
         }
 
-        public SqlDataReader ExecutaComandoRetorno(string query)
+        public SqlDataReader ExecutaComandoRetorno
+            (string query)
         {
             var cmd = new SqlCommand(query, conexao);
             return cmd.ExecuteReader();
