@@ -9,5 +9,15 @@
         public string Descricao { get; set; }
 
         #endregion
+
+        #region Métodos
+
+        public override string ToString()
+        {
+            return "Id: " + this.Id +
+                "\nDescrição: " + this.Descricao;
+        }
+
+        #endregion
     }
 }

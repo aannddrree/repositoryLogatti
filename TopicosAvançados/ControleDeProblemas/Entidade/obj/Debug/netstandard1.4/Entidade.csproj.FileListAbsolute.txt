@@ -6,3 +6,11 @@ C:\Users\andre\source\repos\ControleDeProblemas\Entidade\obj\Debug\netstandard1.
 C:\Users\andre\source\repos\ControleDeProblemas\Entidade\obj\Debug\netstandard1.4\Entidade.AssemblyInfo.cs
 C:\Users\andre\source\repos\ControleDeProblemas\Entidade\obj\Debug\netstandard1.4\Entidade.dll
 C:\Users\andre\source\repos\ControleDeProblemas\Entidade\obj\Debug\netstandard1.4\Entidade.pdb
+C:\repositoryLogatti\TopicosAvançados\ControleDeProblemas\Entidade\bin\Debug\netstandard1.4\Entidade.deps.json
+C:\repositoryLogatti\TopicosAvançados\ControleDeProblemas\Entidade\bin\Debug\netstandard1.4\Entidade.dll
+C:\repositoryLogatti\TopicosAvançados\ControleDeProblemas\Entidade\bin\Debug\netstandard1.4\Entidade.pdb
+C:\repositoryLogatti\TopicosAvançados\ControleDeProblemas\Entidade\obj\Debug\netstandard1.4\Entidade.csprojResolveAssemblyReference.cache
+C:\repositoryLogatti\TopicosAvançados\ControleDeProblemas\Entidade\obj\Debug\netstandard1.4\Entidade.csproj.CoreCompileInputs.cache
+C:\repositoryLogatti\TopicosAvançados\ControleDeProblemas\Entidade\obj\Debug\netstandard1.4\Entidade.AssemblyInfo.cs
+C:\repositoryLogatti\TopicosAvançados\ControleDeProblemas\Entidade\obj\Debug\netstandard1.4\Entidade.dll
+C:\repositoryLogatti\TopicosAvançados\ControleDeProblemas\Entidade\obj\Debug\netstandard1.4\Entidade.pdb

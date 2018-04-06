@@ -3711,11 +3711,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\andre\\source\\repos\\ControleDeProblemas\\Entidade\\Entidade.csproj",
+      "projectUniqueName": "C:\\repositoryLogatti\\TopicosAvançados\\ControleDeProblemas\\Entidade\\Entidade.csproj",
       "projectName": "Entidade",
-      "projectPath": "C:\\Users\\andre\\source\\repos\\ControleDeProblemas\\Entidade\\Entidade.csproj",
+      "projectPath": "C:\\repositoryLogatti\\TopicosAvançados\\ControleDeProblemas\\Entidade\\Entidade.csproj",
       "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andre\\source\\repos\\ControleDeProblemas\\Entidade\\obj\\",
+      "outputPath": "C:\\repositoryLogatti\\TopicosAvançados\\ControleDeProblemas\\Entidade\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
