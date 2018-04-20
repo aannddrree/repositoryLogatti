@@ -13,3 +13,4 @@ C:\repositoryLogatti\TopicosAvançados\ControleDeProblemas\ControleProblemasView
 C:\repositoryLogatti\TopicosAvançados\ControleDeProblemas\ControleProblemasView\obj\Debug\ControleProblemasView.FrmPrincipal.resources
 C:\repositoryLogatti\TopicosAvançados\ControleDeProblemas\ControleProblemasView\bin\Debug\Controle2.dll
 C:\repositoryLogatti\TopicosAvançados\ControleDeProblemas\ControleProblemasView\bin\Debug\Controle2.pdb
+C:\repositoryLogatti\TopicosAvançados\ControleDeProblemas\ControleProblemasView\obj\Debug\ControleProblemasView.FrmProblema.resources

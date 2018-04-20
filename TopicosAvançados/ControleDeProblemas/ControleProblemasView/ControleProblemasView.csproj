@@ -51,6 +51,12 @@
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmProblema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProblema.Designer.cs">
+      <DependentUpon>FrmProblema.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmTipo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProblema.resx">
+      <DependentUpon>FrmProblema.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTipo.resx">
       <DependentUpon>FrmTipo.cs</DependentUpon>

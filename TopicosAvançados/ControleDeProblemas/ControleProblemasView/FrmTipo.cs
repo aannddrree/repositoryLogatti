@@ -22,14 +22,12 @@ namespace ControleProblemasView
         private void btnSalvar_Click_1(object sender, EventArgs e)
         {
             Tipo tipo = new Tipo();
-            tipo.Id = Convert.ToInt32(txtId.Text);
             tipo.Descricao = txtDescricao.Text;
-
-            //MessageBox.Show("Olá turma!" + tipo);
 
             if (new TipoDB().insert(tipo))
             {
                 MessageBox.Show("Registro inserido!");
+                CarregaGrid();
             }
             else
             {
@@ -40,7 +38,14 @@ namespace ControleProblemasView
 
         private void FrmTipo_Load(object sender, EventArgs e)
         {
+            CarregaGrid();
+        }
+
+        private void CarregaGrid()
+        {
             dgTipo.DataSource = new TipoDB().ListarTipo();
+            txtDescricao.Clear();
+            txtDescricao.Focus();
         }
     }
 }
