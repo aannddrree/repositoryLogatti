@@ -55,3 +55,7 @@ C:\Users\andre\source\repos\ProjWeb1\ProjWeb1\obj\Debug\ProjWeb1.csprojResolveAs
 C:\Users\andre\source\repos\ProjWeb1\ProjWeb1\obj\Debug\ProjWeb1.csproj.CoreCompileInputs.cache
 C:\Users\andre\source\repos\ProjWeb1\ProjWeb1\obj\Debug\ProjWeb1.dll
 C:\Users\andre\source\repos\ProjWeb1\ProjWeb1\obj\Debug\ProjWeb1.pdb
+C:\Users\andre\source\repos\ProjWeb1\ProjWeb1\bin\ProjController.dll
+C:\Users\andre\source\repos\ProjWeb1\ProjWeb1\bin\ProjModel.dll
+C:\Users\andre\source\repos\ProjWeb1\ProjWeb1\bin\ProjController.pdb
+C:\Users\andre\source\repos\ProjWeb1\ProjWeb1\bin\ProjModel.pdb

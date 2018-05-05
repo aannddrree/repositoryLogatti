@@ -1,0 +1,8 @@
+C:\Users\andre\source\repos\ProjWeb1\ProjController\bin\Debug\ProjController.dll
+C:\Users\andre\source\repos\ProjWeb1\ProjController\bin\Debug\ProjController.pdb
+C:\Users\andre\source\repos\ProjWeb1\ProjController\bin\Debug\ProjModel.dll
+C:\Users\andre\source\repos\ProjWeb1\ProjController\bin\Debug\ProjModel.pdb
+C:\Users\andre\source\repos\ProjWeb1\ProjController\obj\Debug\ProjController.csprojResolveAssemblyReference.cache
+C:\Users\andre\source\repos\ProjWeb1\ProjController\obj\Debug\ProjController.csproj.CoreCompileInputs.cache
+C:\Users\andre\source\repos\ProjWeb1\ProjController\obj\Debug\ProjController.dll
+C:\Users\andre\source\repos\ProjWeb1\ProjController\obj\Debug\ProjController.pdb

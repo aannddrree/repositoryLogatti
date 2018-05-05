@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProjController;
+using ProjModel;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -20,6 +22,8 @@ namespace ProjWeb1
         {
             LblMSG.Text = "Cliquei no botão - " + TxtDescricao.Text;
             Log(LblMSG.Text);
+            //Insere no banco de dados
+            InsertBanco(LblMSG.Text);
         }
 
         public void Log(String msg)
@@ -90,6 +94,19 @@ namespace ProjWeb1
                 }
                 Lista.Text = list;
             }
+        }
+
+        private void InsertBanco(string valor)
+        {
+
+            new ControllerMensagem().Insert
+                (new Mensagem() { Descricao = valor });
+
+           /* ControllerMensagem c = new ControllerMensagem();
+            Mensagem m = new Mensagem();
+            m.Descricao = valor;
+            c.Insert(m);*/
+
         }
     }
 }

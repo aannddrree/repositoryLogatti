@@ -88,6 +88,16 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProjController\ProjController.csproj">
+      <Project>{A8A6EEDD-5FF9-4F7E-A059-5CDBDC232554}</Project>
+      <Name>ProjController</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjModel\ProjModel.csproj">
+      <Project>{0369D432-197D-4465-AA47-66604B09DB82}</Project>
+      <Name>ProjModel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
