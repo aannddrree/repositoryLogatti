@@ -6,6 +6,12 @@ public class Cidade {
 	private String nome;
 	private int qtdHabitantes;
 	
+	public Cidade() {}
+	
+	public Cidade(int id) {
+		this.id = id;
+	}
+	
 	public int getId() {
 		return id;
 	}

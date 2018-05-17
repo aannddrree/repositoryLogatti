@@ -1,3 +1,6 @@
+<%@page import="br.com.projescola.db.CidadeDB"%>
+<%@page import="br.com.projescola.model.Cidade"%>
+<%@page import="org.apache.jasper.tagplugins.jstl.core.ForEach"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -26,8 +29,17 @@
 </div>
 
 <div class="form-group">
-<label>Cidade</label>
-<input class="form-control" type="text" id="cidade" name="cidade" /> 
+    <label for="selectCidade">Cidade</label>
+    <select class="form-control" id="selectCidade" 
+    name="selectCidade">
+     
+    <option>Selecione</option>
+    <% for (Cidade cidade : new CidadeDB().all()) { %>
+      <option value="<%=cidade.getId() %>" ><%=cidade.getNome() %>
+      </option>
+    <% } %>
+    
+    </select>
 </div>
 
 <div class="form-group">

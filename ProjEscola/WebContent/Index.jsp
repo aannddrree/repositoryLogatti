@@ -11,6 +11,11 @@
 </head>
 <body>
 
+<%if (request.getAttribute("msg") != null){%>
+<p>Olá turma tem mensagem: <%=request.getAttribute("msg")%></p>	
+<%} %>
+
+
 <form action="ControllerLogin" method="post">
 <div class="col-sm-3">
 <div class="form-group">
