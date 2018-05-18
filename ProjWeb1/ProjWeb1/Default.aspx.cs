@@ -64,6 +64,7 @@ namespace ProjWeb1
         protected void BtnListar_Click(object sender, EventArgs e)
         {
             ListarLog();
+            ListarDados();
         }
 
         public void ListarLog()
@@ -108,5 +109,12 @@ namespace ProjWeb1
             c.Insert(m);*/
 
         }
+
+        private void ListarDados()
+        {
+            GDVMensagem.DataSource = new ControllerMensagem().Select();
+            GDVMensagem.DataBind();
+        }
+
     }
 }

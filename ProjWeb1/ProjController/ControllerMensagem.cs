@@ -40,6 +40,25 @@ namespace ProjController
             return true;
         }
 
+        public DataTable Select()
+        {
+            DataTable dt = new DataTable();
+            SqlCommand scomand = new SqlCommand();
+            SqlDataAdapter ad = new SqlDataAdapter();
+
+            con.Open();
+
+            scomand = new SqlCommand("PR_CONSULTAR_MENSAGEM", con);
+            scomand.CommandType = CommandType.StoredProcedure;
+
+            ad.SelectCommand = scomand;
+            ad.Fill(dt);
+
+            con.Close();
+
+            return dt;
+        }
+
 
 
     }
