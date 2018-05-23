@@ -12,6 +12,10 @@ public class Cidade {
 		this.id = id;
 	}
 	
+	public Cidade (String nome) {
+		this.nome = nome;
+	}
+	
 	public int getId() {
 		return id;
 	}

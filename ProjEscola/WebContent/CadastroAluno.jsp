@@ -1,5 +1,7 @@
 <%@page import="br.com.projescola.db.CidadeDB"%>
 <%@page import="br.com.projescola.model.Cidade"%>
+<%@page import="br.com.projescola.model.Aluno"%>
+<%@page import="br.com.projescola.db.AlunoDB"%>
 <%@page import="org.apache.jasper.tagplugins.jstl.core.ForEach"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
@@ -18,6 +20,14 @@
 
 <form action="ControllerAluno" method="post">
 <div class="col-sm-6">
+
+<%if (request.getAttribute("msg") != null){%>
+<div class="alert alert-primary" role="alert">
+  <%=request.getAttribute("msg")%>
+</div>
+<%} %>
+
+
 <div class="form-group">
 <label>Nome</label>
 <input class="form-control" type="text" id="nome" name="nome"/> 
@@ -52,6 +62,37 @@
 </div>
 
 </form>
+
+<br>
+<div class="col-sm-6">
+<table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Nota</th>
+      <th scope="col">Cidade</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+  <% for(Aluno aluno : new AlunoDB().all()) { %>
+    
+    <tr>
+      <td><%=aluno.getId() %></td>
+      <td><%=aluno.getNome() %></td>
+      <td><%=aluno.getNota() %></td>
+      <td><%=aluno.getCidade().getNome() %></td>
+    </tr>
+    
+  <% } %>
+  
+  </tbody>
+</table>
+</div>
+
+
+
 <br>
 <a href="Principal.jsp" class="btn btn-default">Voltar</a>
 
